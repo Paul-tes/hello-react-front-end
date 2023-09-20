@@ -1,14 +1,14 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Greetings from './components/Greetings';
+import Greeting from './components/Greeting';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="App">
       <Routes>
-         <Route path='/' element={Greetings}/>
+        <Route path="/" element={<Greeting />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
